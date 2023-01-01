@@ -139,6 +139,7 @@ export async function getStaticPaths() {
 
 // Grab all necessary information for every course
 export async function getStaticProps({ params }: { params: { id: string } }) {
+  // Object : type
   let subjects: Set<string>;
   const name = params.id;
   switch (name) {
